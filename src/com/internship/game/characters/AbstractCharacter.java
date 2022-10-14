@@ -2,8 +2,9 @@ package com.internship.game.characters;
 
 public abstract class AbstractCharacter implements CharacterInterface{
     private String name;
-    private int movement = 10;
+    private int speed = 10;
     private double energy = 10;
+    private double intelligence = 10;
     private String race;
     private String gender;
     private double agility = 10;
@@ -24,12 +25,12 @@ public abstract class AbstractCharacter implements CharacterInterface{
         this.name = name;
     }
 
-    public int getMovement() {
-        return movement;
+    public int getSpeed() {
+        return speed;
     }
 
-    public void setMovement(int movement) {
-        this.movement = movement;
+    public void setSpeed(int movement) {
+        this.speed = movement;
     }
 
     public double getEnergy() {
@@ -55,6 +56,13 @@ public abstract class AbstractCharacter implements CharacterInterface{
     public void setGender(String gender) {
         this.gender = gender;
     }
+    public double getIntelligence() {
+        return intelligence;
+    }
+    public void setIntelligence(double intelligence) {
+        this.intelligence = intelligence;
+    }
+
 
     @Override
     public void actions() {
