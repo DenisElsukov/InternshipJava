@@ -9,6 +9,17 @@ public abstract class AbstractCharacter implements CharacterInterface{
     private String gender;
     private double agility = 10;
 
+    /*CONSTRUCTOR*/
+    protected AbstractCharacter(String name, String race, String gender, int speed, double energy, double intelligence, double agility) {
+        this.name = name;
+        this.race = race;
+        this.gender = gender;
+        this.speed = speed;
+        this.energy = energy;
+        this.intelligence = intelligence;
+        this.agility = agility;
+    }
+
     public double getAgility() {
         return agility;
     }
@@ -29,8 +40,8 @@ public abstract class AbstractCharacter implements CharacterInterface{
         return speed;
     }
 
-    public void setSpeed(int movement) {
-        this.speed = movement;
+    public void setSpeed(int speed) {
+        this.speed = speed;
     }
 
     public double getEnergy() {
