@@ -1,6 +1,6 @@
 package com.internship.game.characters;
 
-public abstract class AbstractCharacter implements CharacterInterface{
+public abstract class AbstractCharacter implements CharacterInterface {
     private String name;
     private int speed = 10;
     private double energy = 10;
