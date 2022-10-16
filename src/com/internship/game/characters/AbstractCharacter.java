@@ -66,7 +66,7 @@ public abstract class AbstractCharacter implements CharacterInterface{
 
     @Override
     public void actions() {
-        System.out.println("OK, I will do it");
+        System.out.println("OK, will do it");
     }
 
     @Override
