@@ -2,16 +2,13 @@ package com.internship.game.characters;
 
 public class Warrior extends AbstractCharacter {
 
-    //  Warrior characteristics:
-    private final static double ENEGRY = 14;
+    private final static double ENERGY = 14;
     private final static int SPEED = 10;
     private final static double INTELLIGENCE = 12;
     private final static double AGILITY = 11;
 
-    /*CONSTRUCTOR*/
-
     public Warrior(String name, String race, String gender) {
-        super(name, race, gender, SPEED, ENEGRY, INTELLIGENCE, AGILITY);
+        super(name, race, gender, SPEED, ENERGY, INTELLIGENCE, AGILITY);
     }
 
     @Override

@@ -9,7 +9,6 @@ public abstract class AbstractCharacter implements CharacterInterface{
     private String gender;
     private double agility = 10;
 
-    /*CONSTRUCTOR*/
     protected AbstractCharacter(String name, String race, String gender, int speed, double energy, double intelligence, double agility) {
         this.name = name;
         this.race = race;
@@ -73,7 +72,6 @@ public abstract class AbstractCharacter implements CharacterInterface{
     public void setIntelligence(double intelligence) {
         this.intelligence = intelligence;
     }
-
 
     @Override
     public void actions() {
