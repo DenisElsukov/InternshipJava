@@ -1,41 +1,28 @@
 package com.internship.game.characters;
 public class Rogue extends AbstractCharacter {
-    @Override
-    public String getName() {
-        return super.getName();
-    }
 
-    @Override
-    public String getGender() {
-        return super.getGender();
+    public void setAgility(double agilityRogue) {
+        setAgility(9.88);
     }
-
-    @Override
-    public String getRace() {
-        return super.getRace();
+    public void setName(String nameRogue) {
+        setName("Jack");
     }
-
-    @Override
-    public int getSpeed() {
-        return super.getSpeed();
+    public void setSpeed(int movement) {
+        setSpeed(7);
     }
-
-    @Override
-    public double getEnergy() {
-        return super.getEnergy();
+    public void setEnergy(double energy) {
+        setEnergy(6.45);
     }
-
-    @Override
-    public double getIntelligence() {
-        return super.getIntelligence();
+    public void setRace(String race) {
+        setRace("human");
     }
-
-    @Override
-    public double getAgility() {
-        return super.getAgility();
+    public void setGender(String gender) {
+        setGender("male") ;
     }
-
-    @Override
+    public void setIntelligence(double intelligence) {
+        setIntelligence(3.54);
+    }
+        @Override
     public void actions() {
         System.out.println("I hop on, you hope");
     }

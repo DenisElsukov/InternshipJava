@@ -1,13 +1,14 @@
 package com.internship.game.characters;
 
 public abstract class AbstractCharacter implements CharacterInterface{
-    private String name;
+    protected String name;
     private int speed = 10;
     private double energy = 10;
     private double intelligence = 10;
     private String race;
     private String gender;
     private double agility = 10;
+
 
     public double getAgility() {
         return agility;
@@ -66,7 +67,7 @@ public abstract class AbstractCharacter implements CharacterInterface{
 
     @Override
     public void actions() {
-        System.out.println("OK, will do it");
+        System.out.println("OK, I will do it");
     }
 
     @Override
