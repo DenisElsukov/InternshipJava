@@ -1,7 +1,7 @@
 package com.internship.game.characters;
 
 public abstract class AbstractCharacter implements CharacterInterface{
-    protected String name;
+    private String name;
     private int speed = 10;
     private double energy = 10;
     private double intelligence = 10;
@@ -14,7 +14,7 @@ public abstract class AbstractCharacter implements CharacterInterface{
         return agility;
     }
 
-    public void setAgility(double agility) {
+    public void setAgility() {
         this.agility = agility;
     }
 
@@ -30,8 +30,8 @@ public abstract class AbstractCharacter implements CharacterInterface{
         return speed;
     }
 
-    public void setSpeed(int movement) {
-        this.speed = movement;
+    public void setSpeed(int speed) {
+        this.speed = speed;
     }
 
     public double getEnergy() {
