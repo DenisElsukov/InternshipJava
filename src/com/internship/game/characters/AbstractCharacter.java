@@ -1,13 +1,12 @@
 package com.internship.game.characters;
 
-public abstract class AbstractCharacter implements CharacterInterface{
-    private String name;
-    private int speed = 10;
+public abstract class AbstractCharacter implements CharacterInterface {
+    private double agility = 10;
     private double energy = 10;
     private double intelligence = 10;
+    private int speed = 10;
     private String race;
     private String gender;
-    private double agility = 10;
 
     public double getAgility() {
         return agility;
@@ -15,14 +14,6 @@ public abstract class AbstractCharacter implements CharacterInterface{
 
     public void setAgility(double agility) {
         this.agility = agility;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public int getSpeed() {
@@ -41,28 +32,13 @@ public abstract class AbstractCharacter implements CharacterInterface{
         this.energy = energy;
     }
 
-    public String getRace() {
-        return race;
-    }
-
-    public void setRace(String race) {
-        this.race = race;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
     public double getIntelligence() {
         return intelligence;
     }
+
     public void setIntelligence(double intelligence) {
         this.intelligence = intelligence;
     }
-
 
     @Override
     public void actions() {
@@ -82,6 +58,13 @@ public abstract class AbstractCharacter implements CharacterInterface{
     @Override
     public void attack() {
         System.out.println("OK, attacking");
+    }
+
+    public void updateCharacteristicsByClass(AbstractCharacter character) {
+        setIntelligence(character.getIntelligence());
+        setSpeed(character.getSpeed());
+        setAgility(character.getAgility());
+        setEnergy(character.getEnergy());
     }
 
 }
