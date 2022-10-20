@@ -1,27 +1,9 @@
 package com.internship.game.characters;
 public class Rogue extends AbstractCharacter {
+    private final double buffForRogueAgility = 4.0;
+    private final double buffForRogueEnergy = 1.5;
+    private final double buffForRogueIntelligence = 0.2;
 
-    public void setAgility(double agility) {
-        setAgility(9.88);
-    }
-    public void setName(String name) {
-        setName("Jack");
-    }
-    public void setSpeed(int movement) {
-        setSpeed(7);
-    }
-    public void setEnergy(double energy) {
-        setEnergy(6.45);
-    }
-    public void setRace(String race) {
-        setRace("human");
-    }
-    public void setGender(String gender) {
-        setGender("male") ;
-    }
-    public void setIntelligence(double intelligence) {
-        setIntelligence(3.54);
-    }
         @Override
     public void actions() {
         System.out.println("I hop on, you hope");
@@ -29,7 +11,7 @@ public class Rogue extends AbstractCharacter {
 
     @Override
     public void greeting() {
-        System.out.println("Hello, I am Jack. I stole an apple for you.");
+        System.out.println("Hello. I stole an apple for you.");
     }
 
     @Override
@@ -41,4 +23,12 @@ public class Rogue extends AbstractCharacter {
     public void attack() {
         System.out.println("\'Slit!\' \'Crrrr!\'");
     }
+
+    /* public static void main(String[] args) {
+        Rogue rogue = new Rogue();
+        System.out.println(rogue.getSpeed());
+        System.out.println(rogue.getSpeed() + rogue.buffForRogueAgility);
+        System.out.println(rogue.getSpeed() + rogue.buffForRogueEnergy);
+        System.out.println(rogue.getSpeed() + rogue.buffForRogueIntelligence);
+    } */
 }
