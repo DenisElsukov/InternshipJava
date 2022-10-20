@@ -1,10 +1,10 @@
 package com.internship.game.characters;
 public class Rogue extends AbstractCharacter {
 
-    public void setAgility(double agilityRogue) {
+    public void setAgility(double agility) {
         setAgility(9.88);
     }
-    public void setName(String nameRogue) {
+    public void setName(String name) {
         setName("Jack");
     }
     public void setSpeed(int movement) {
