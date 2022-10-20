@@ -1,8 +1,9 @@
 package com.internship.game.characters;
 public class Rogue extends AbstractCharacter {
-    private final double buffForRogueAgility = 4.0;
-    private final double buffForRogueEnergy = 1.5;
-    private final double buffForRogueIntelligence = 0.2;
+    // Buff
+    private final double AGILITY = 4.0;
+    private final double ENERGY = 1.5;
+    private final double INTELLIGENCE = 0.2;
 
         @Override
     public void actions() {
@@ -27,8 +28,8 @@ public class Rogue extends AbstractCharacter {
     /* public static void main(String[] args) {
         Rogue rogue = new Rogue();
         System.out.println(rogue.getSpeed());
-        System.out.println(rogue.getSpeed() + rogue.buffForRogueAgility);
-        System.out.println(rogue.getSpeed() + rogue.buffForRogueEnergy);
-        System.out.println(rogue.getSpeed() + rogue.buffForRogueIntelligence);
+        System.out.println(rogue.getSpeed() + rogue.AGILITY);
+        System.out.println(rogue.getSpeed() + rogue.ENERGY);
+        System.out.println(rogue.getSpeed() + rogue.INTELLIGENCE);
     } */
 }
