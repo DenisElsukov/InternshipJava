@@ -1,22 +1,19 @@
 package com.internship.game.characters;
 
-public class Wizard extends AbstractCharacter {
-//    public static void main(String[] args) {
-//        Wizard wizard = new Wizard();
-//        System.out.println(wizard.intelligence);
-//    }
+public class Wizard extends Character {
 
     // Buffs by Hero's class
-    private final int SPEEDDIFFERENCE = 0;
-    private final double ENERGYDIFFERENCE = 1;
-    private final double INTELLIGENCEDIFFERENCE = 2;
-    private final double AGILITYDIFFERENCE = -1;
+    private final int SPEED_DIFFERENCE = 0;
+    private final double ENERGY_DIFFERENCE = 1;
+    private final double INTELLIGENCE_DIFFERENCE = 2;
+    private final double AGILITY_DIFFERENCE = -1;
 
-    private int speed = getSpeed() + SPEEDDIFFERENCE;
-    private double energy = getEnergy() + ENERGYDIFFERENCE;
-    private double intelligence = getIntelligence() + INTELLIGENCEDIFFERENCE;
-    private double agility = getAgility() + AGILITYDIFFERENCE;
-
+    public Wizard() {
+        setIntelligence(getIntelligence() + INTELLIGENCE_DIFFERENCE);
+        setAgility(getAgility() + AGILITY_DIFFERENCE);
+        setEnergy(getEnergy() + ENERGY_DIFFERENCE);
+        setSpeed(getSpeed() + SPEED_DIFFERENCE);
+    }
 
     @Override
     public void greeting(){
