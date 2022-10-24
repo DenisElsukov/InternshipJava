@@ -8,6 +8,24 @@ public abstract class AbstractCharacter implements CharacterInterface{
     private String race;
     private String gender;
     private double agility = 10;
+    private String weapon;      //Sting or Object?
+    private String equipment;   //Sting or Object?
+
+    public String getWeapon() {
+        return weapon;
+    }
+
+    public void setWeapon(String weapon) {
+        this.weapon = weapon;
+    }
+
+    public String getEquipment() {
+        return equipment;
+    }
+
+    public void setEquipment(String equipment) {
+        this.equipment = equipment;
+    }
 
     public double getAgility() {
         return agility;
