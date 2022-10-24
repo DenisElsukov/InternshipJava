@@ -1,6 +1,11 @@
 package com.internship.game.characters;
 
 public class Wizard extends Character {
+    public String toString() {
+        return "Character{" +
+                "name='" + "Merlin" + '\'' +
+                '}' + "\n" + "Character{" + "gender='" + "Human" + '\'' + '}' ;
+    }
 
     // Buffs by Hero's class
     private final int SPEED_DIFFERENCE = 0;
@@ -41,6 +46,9 @@ public class Wizard extends Character {
     public void attackByMagick(String magicElement){
         System.out.println("Wizard attack by " + magicElement);
     }
-
+ public static void main(String[] args) {
+        Wizard wizard = new Wizard();
+     System.out.println(wizard.toString());
+ }
 
 }
