@@ -8,8 +8,8 @@ public enum Companion {
     SNAKE("Cunning and luck are on my side!", 10),
     RAVEN("Wisdom is needed now more than ever!", 10);
 
-    String greeting;
-    int energy;
+    private final String greeting;
+    private final int energy;
 
     Companion(String greeting, int energy) {
         this.greeting = greeting;
@@ -20,20 +20,8 @@ public enum Companion {
         return greeting;
     }
 
-    public void setGreeting(String greeting) {
-        this.greeting = greeting;
-    }
-
     public int getEnergy() {
         return energy;
     }
 
-    public void setEnergy(int energy) {
-        this.energy = energy;
-    }
-
-    @Override
-    public String toString() {
-        return this.greeting;
-    }
 }

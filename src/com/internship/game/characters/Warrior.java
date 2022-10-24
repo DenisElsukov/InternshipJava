@@ -1,14 +1,18 @@
 package com.internship.game.characters;
 
-public class Warrior extends AbstractCharacter {
+public class Warrior extends Character {
 
-    private final static double ENERGY = 14;
-    private final static int SPEED = 10;
-    private final static double INTELLIGENCE = 12;
-    private final static double AGILITY = 11;
+    // Buffs by Hero's class
+    private final int SPEED_DIFFERENCE = -1;
+    private final double ENERGY_DIFFERENCE = 2;
+    private final double INTELLIGENCE_DIFFERENCE = 1;
+    private final double AGILITY_DIFFERENCE = 0;
 
-    public Warrior(String name, String race, String gender) {
-        super(name, race, gender, SPEED, ENERGY, INTELLIGENCE, AGILITY);
+    public Warrior() {
+        setIntelligence(getIntelligence() + INTELLIGENCE_DIFFERENCE);
+        setAgility(getAgility() + AGILITY_DIFFERENCE);
+        setEnergy(getEnergy() + ENERGY_DIFFERENCE);
+        setSpeed(getSpeed() + SPEED_DIFFERENCE);
     }
 
     @Override

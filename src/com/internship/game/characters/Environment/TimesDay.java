@@ -1,7 +1,5 @@
 package com.internship.game.characters.Environment;
 
-import com.internship.game.characters.MyHeroTest;
-
 public enum TimesDay {
 
     SUNRISE("The sun rises! Soon there will be no hiding."),
@@ -12,17 +10,14 @@ public enum TimesDay {
     NIGHT("Darkness around...Time to rest or go forward!"),
     FULL_MOON("The beautiful moon lights the way!");
 
-    String AtmosphereAround;
+    private final String atmosphereAround;
 
     TimesDay(String atmosphereAround) {
-        AtmosphereAround = atmosphereAround;
+        this.atmosphereAround = atmosphereAround;
     }
 
     public String getAtmosphereAround() {
-        return AtmosphereAround;
+        return atmosphereAround;
     }
 
-    public void setAtmosphereAround(String atmosphereAround) {
-        AtmosphereAround = atmosphereAround;
-    }
 }

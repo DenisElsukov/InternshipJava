@@ -8,14 +8,12 @@ public abstract class AbstractCharacter implements CharacterInterface {
     private String race;
     private String gender;
 
-    protected AbstractCharacter(String name, String race, String gender, int speed, double energy, double intelligence, double agility) {
-        this.name = name;
+    public String getRace() {
+        return race;
+    }
+
+    public void setRace(String race) {
         this.race = race;
-        this.gender = gender;
-        this.speed = speed;
-        this.energy = energy;
-        this.intelligence = intelligence;
-        this.agility = agility;
     }
 
     public double getAgility() {
