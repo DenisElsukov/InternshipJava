@@ -1,6 +1,6 @@
-package game.inventory;
+package com.internship.game.inventory;
 
-import com.internship.game.characters.Player;
+import com.internship.game.characters.Character;
 public enum Weapon {
 
     //Standart weapon
@@ -22,8 +22,8 @@ public enum Weapon {
     private Weapon (int speedDifferense, int energyDifference, int intelligenceDifference, int agilityDifference){
     }
 
-    static void boostCharacteristics (Weapon weapon,Player player){
-        if (weapon.equals(EXCALIBUR) & player.getRace().equals("human")){
+    static void boostCharacteristics (Weapon weapon,Character myHero){
+        if (weapon.equals(EXCALIBUR) & myHero.getRace().equals("human")){
             EXCALIBUR.setEnergyDifference(7);
         }
     }

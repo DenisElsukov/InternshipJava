@@ -10,7 +10,6 @@ public class CharacterFactory {
         if (characterClass instanceof Wizard) {
             character.updateCharacteristicsByClass(characterClass);
         }
-
         return character;
     }
 

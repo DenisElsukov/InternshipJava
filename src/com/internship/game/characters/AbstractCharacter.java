@@ -1,12 +1,12 @@
 package com.internship.game.characters;
+import com.internship.game.inventory.Weapon;
 
 public abstract class AbstractCharacter implements CharacterInterface {
     private double agility = 10;
     private double energy = 10;
     private double intelligence = 10;
     private int speed = 10;
-    private String race;
-    private String gender;
+
 
     public double getAgility() {
         return agility;
@@ -65,6 +65,21 @@ public abstract class AbstractCharacter implements CharacterInterface {
         setSpeed(character.getSpeed());
         setAgility(character.getAgility());
         setEnergy(character.getEnergy());
+    }
+
+    public void checkWeapon (Character character, Weapon weapon){
+        if(weapon.equals(Weapon.EXCALIBUR)){
+            switch (character.getRace()){
+                case "human":
+                    setEnergy(character.getEnergy() + 3);
+                    break;
+                case "elf":
+                    setAgility(character.getAgility() + 3);
+                    break;
+            }
+        }
+
+
     }
 
 }
