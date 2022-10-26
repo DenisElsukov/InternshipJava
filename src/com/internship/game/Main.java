@@ -30,5 +30,10 @@ public class Main {
         factory.influenceDay(timesDaySunset,characterWarrior);
         factory.printCharacteristics(characterWarrior);
 
+        Warrior warrior1 = new Warrior();
+        Warrior warrior2 = new Warrior();
+
+        System.out.println(warrior1.equals(warrior2));
+
     }
 }

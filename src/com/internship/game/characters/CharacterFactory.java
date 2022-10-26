@@ -32,32 +32,32 @@ public class CharacterFactory {
 
         System.out.println(companion.getGreeting());
 
-        switch (companion.name()) {
-            case "EAGLE" -> {
+        switch (companion) {
+            case EAGLE -> {
                 character.setEnergy(character.getEnergy() + 2);
                 character.setSpeed(character.getSpeed() + 1);
                 System.out.println("Energy +2");
                 System.out.println("Speed +1");
             }
-            case "SNAKE" -> {
+            case SNAKE -> {
                 character.setIntelligence(character.getIntelligence() + 2);
                 character.setAgility(character.getAgility() + 1);
                 System.out.println("Intelligence +2");
                 System.out.println("Agility +1");
             }
-            case "BEAR" -> {
+            case BEAR -> {
                 character.setEnergy(character.getEnergy() + 2);
                 character.setIntelligence(character.getIntelligence() + 1);
                 System.out.println("Energy +2");
                 System.out.println("Intelligence +1");
             }
-            case "TIGER" -> {
+            case TIGER -> {
                 character.setAgility(character.getAgility() + 2);
                 character.setIntelligence(character.getIntelligence() + 1);
                 System.out.println("Agility +2");
                 System.out.println("Intelligence +1");
             }
-            case "RAVEN" -> {
+            case RAVEN -> {
                 character.setIntelligence(character.getIntelligence() + 2);
                 character.setSpeed(character.getSpeed() + 1);
                 System.out.println("Intelligence +2");
@@ -70,39 +70,39 @@ public class CharacterFactory {
 
         System.out.println(timesDay.getAtmosphereAround());
 
-        switch (timesDay.name()) {
-            case "SUNRISE" -> {
+        switch (timesDay) {
+            case SUNRISE -> {
                 if (character.getRace().equals("Elf")) {
                     character.setIntelligence(character.getIntelligence() + 1);
                     System.out.println("Intelligence +1");
                 }
             }
-            case "MORNING" -> {
+            case MORNING -> {
                 if (character instanceof Warrior) {
                     character.setEnergy(character.getEnergy() + 1);
                     System.out.println("Energy +1");
                 }
             }
-            case "NOON" -> {
+            case NOON -> {
                 if (character.getRace().equals("Gnome")) {
                     character.setSpeed(character.getSpeed() + 1);
                     System.out.println("Speed +1");
                 }
             }
-            case "EVENING" -> {
+            case EVENING -> {
                 if (character instanceof Wizard) {
                     character.setAgility(character.getAgility() + 1);
                     System.out.println("Agility +1");
                 }
                 ;
             }
-            case "SUNSET" -> {
+            case SUNSET -> {
                 if (character.getRace().equals("Human")) {
                     character.setEnergy(character.getEnergy() + 1);
                     System.out.println("Energy +1");
                 }
             }
-            case "NIGHT" -> {
+            case NIGHT -> {
                 if (character.getRace().equals("Orc")) {
                     character.setSpeed(character.getSpeed() + 1);
                     System.out.println("Speed +1");
