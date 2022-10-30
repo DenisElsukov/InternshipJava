@@ -6,6 +6,8 @@ public abstract class AbstractCharacter implements CharacterInterface {
     private double energy = 10;
     private double intelligence = 10;
     private int speed = 10;
+    private String race;
+    private String gender;
 
 
     public String getRace() {
