@@ -1,5 +1,8 @@
 package com.internship.game.characters;
 
+import com.internship.game.Inventory.Artifacts;
+import com.internship.game.Inventory.Equipment;
+import com.internship.game.Inventory.Weapon;
 import com.internship.game.characters.Environment.TimesDay;
 import com.internship.game.characters.Сompanion.Companion;
 
@@ -26,6 +29,30 @@ public class CharacterFactory {
         System.out.println(character.getIntelligence());
         System.out.println(character.getEnergy());
         System.out.println(character.getSpeed());
+    }
+
+
+
+    public void weaponChangeCharacteristics (Weapon weapon, Character character){
+
+        System.out.println("I choose " + weapon.name());
+
+        switch (weapon.name()) {
+            case "FISTS", "STAFF", "SWORD", "AXE", "BOW", "EXCALIBUR", "HOOD_SPIRIT" -> {
+                Weapon.boostCharacteristics(weapon, character);
+            }
+        }
+    }
+
+    public void armorChangeCharacteristics (Equipment equipment, Character character){
+
+        System.out.println("I choose " + equipment.name());
+
+        switch (equipment.name()) {
+            case "SKIN_ARMOR", "CHAIN_ARMOR", "ARMOR", "WHITE_ROBE", "MITHRIL", "SHINOBI_SHADOW", "GENDER_FUN" -> {
+                Equipment.boostCharacteristics(equipment, character);
+            }
+        }
     }
 
     public void companionGivePower(Companion companion, Character character) {
