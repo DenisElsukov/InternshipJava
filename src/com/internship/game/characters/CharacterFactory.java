@@ -1,31 +1,48 @@
 package com.internship.game.characters;
 
-import com.internship.game.characters.Environment.TimesDay;
-import com.internship.game.characters.Сompanion.Companion;
+import com.internship.game.inventory.Equipment;
+import com.internship.game.inventory.Weapon;
+import com.internship.game.characters.environment.TimesDay;
+import com.internship.game.characters.companion.Companion;
 
 public class CharacterFactory {
 
     public CharacterFactory() {
     }
 
-    public Character createCharacter(AbstractCharacter characterClass) {
-        Character character = new Character();
-        if (characterClass instanceof Wizard) {
-            character.updateCharacteristicsByClass(characterClass);
-        }
-
-        if (characterClass instanceof Warrior) {
-            character.updateCharacteristicsByClass(characterClass);
-        }
-
-        return character;
-    }
+    // TODO: implement methods to instantiate characters
+    // something like that:
+    // public Character create<Class>Character(...) { ... }
 
     public void printCharacteristics(Character character) {
         System.out.println(character.getAgility());
         System.out.println(character.getIntelligence());
         System.out.println(character.getEnergy());
         System.out.println(character.getSpeed());
+    }
+
+
+
+    public void weaponChangeCharacteristics (Weapon weapon, Character character){
+
+        System.out.println("I choose " + weapon.name());
+
+        switch (weapon.name()) {
+            case "FISTS", "STAFF", "SWORD", "AXE", "BOW", "EXCALIBUR", "HOOD_SPIRIT" -> {
+                Weapon.boostCharacteristics(weapon, character);
+            }
+        }
+    }
+
+    public void armorChangeCharacteristics (Equipment equipment, Character character){
+
+        System.out.println("I choose " + equipment.name());
+
+        switch (equipment.name()) {
+            case "SKIN_ARMOR", "CHAIN_ARMOR", "ARMOR", "WHITE_ROBE", "MITHRIL", "SHINOBI_SHADOW", "GENDER_FUN" -> {
+                Equipment.boostCharacteristics(equipment, character);
+            }
+        }
     }
 
     public void companionGivePower(Companion companion, Character character) {

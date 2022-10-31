@@ -1,11 +1,6 @@
 package com.internship.game.characters;
 
 public class Wizard extends Character {
-    public String toString() {
-        return "Character{" +
-                "name='" + "Merlin" + '\'' +
-                '}' + "\n" + "Character{" + "gender='" + "Human" + '\'' + '}' ;
-    }
 
     // Buffs by Hero's class
     private final int SPEED_DIFFERENCE = 0;
@@ -21,34 +16,40 @@ public class Wizard extends Character {
     }
 
     @Override
-    public void greeting(){
+    public void greeting() {
         System.out.println("'My name is " + getAgility() + "you done rightly choice'");
     }
+
     @Override
-    public void doStep(){
+    public void doStep() {
         System.out.println("'A wizard is never late. He arrives precisely when he means to'");
         System.out.println("Wizard do step");
     }
+
     @Override
-    public void actions(){
+    public void actions() {
         System.out.println("'I'm too old for this shit'");
         System.out.println("Wizard do what you order");
     }
 
     @Override
-    public void attack(){
+    public void attack() {
         System.out.println("'You shall not pass!'");
         System.out.println("Wizard attack enemy");
     }
-    public void attackByStaff(){
+
+    public void attackByStaff() {
         System.out.println("Wizard attack by staff");
     }
-    public void attackByMagick(String magicElement){
+
+    public void attackByMagick(String magicElement) {
         System.out.println("Wizard attack by " + magicElement);
     }
- public static void main(String[] args) {
-        Wizard wizard = new Wizard();
-     System.out.println(wizard.toString());
- }
+
+    public String toString() {
+        return "Character{" +
+                "name='" + getName() + '\'' +
+                '}' + "\n" + "Character{" + "gender='" + getRace() + '\'' + '}';
+    }
 
 }

@@ -6,6 +6,7 @@ public class Rogue extends Character {
                 "name='" + "Jack" + '\'' +
                 '}' + "\n" + "Character{" + "gender='" + "Human" + '\'' + '}';
     }
+
     //Buff
     private final double AGILITY = 4.0;
     private final double ENERGY = 1.5;
@@ -30,7 +31,8 @@ public class Rogue extends Character {
     public void attack() {
         System.out.println("\'Slit!\' \'Crrrr!\'");
     }
-    public static void main (String[] args) {
+
+    public static void main(String[] args) {
         Rogue rogue = new Rogue();
         System.out.println(rogue.toString());
         System.out.println(rogue.getSpeed());

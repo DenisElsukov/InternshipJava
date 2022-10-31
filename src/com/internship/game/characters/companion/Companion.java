@@ -1,4 +1,4 @@
-package com.internship.game.characters.Сompanion;
+package com.internship.game.characters.companion;
 
 public enum Companion {
 
