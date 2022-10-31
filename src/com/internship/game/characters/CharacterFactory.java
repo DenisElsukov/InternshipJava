@@ -10,9 +10,9 @@ public class CharacterFactory {
     public CharacterFactory() {
     }
 
-    // TODO: implement methods to instantiate characters
-    // something like that:
-    // public Character create<Class>Character(...) { ... }
+    public Character createWarriorCharacter(String name, String gender, String race) {
+        return new Warrior(name, gender, race);
+    }
 
     public void printCharacteristics(Character character) {
         System.out.println(character.getAgility());
@@ -20,7 +20,6 @@ public class CharacterFactory {
         System.out.println(character.getEnergy());
         System.out.println(character.getSpeed());
     }
-
 
 
     public void weaponChangeCharacteristics (Weapon weapon, Character character){
@@ -126,12 +125,12 @@ public class CharacterFactory {
                 }
             }
 
-//            case "FULL_MOON" -> {
-//                if (character instanceof Rogue) {
-//                    character.setSpeed(character.getSpeed() + 1);
-//                    System.out.println("Speed +1")
-//                }
-//            }
+            case FULL_MOON -> {
+                if (character instanceof Rogue) {
+                    character.setSpeed(character.getSpeed() + 1);
+                    System.out.println("Speed +1");
+                }
+            }
         }
     }
 }

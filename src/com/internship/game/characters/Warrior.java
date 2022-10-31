@@ -8,7 +8,8 @@ public class Warrior extends Character {
     private final double INTELLIGENCE_DIFFERENCE = 1;
     private final double AGILITY_DIFFERENCE = 0;
 
-    public Warrior() {
+    public Warrior(String name, String gender, String race) {
+        super(name, gender, race);
         setIntelligence(getIntelligence() + INTELLIGENCE_DIFFERENCE);
         setAgility(getAgility() + AGILITY_DIFFERENCE);
         setEnergy(getEnergy() + ENERGY_DIFFERENCE);
@@ -22,7 +23,8 @@ public class Warrior extends Character {
 
     @Override
     public void greeting() {
-        System.out.println("Greetings! I'm always ready to fight!");
+        System.out.println("Greetings! I am " + getName() + "!");
+        System.out.println("I'm always ready to fight!");
     }
 
     @Override

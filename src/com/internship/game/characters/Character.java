@@ -1,9 +1,21 @@
 package com.internship.game.characters;
 
+import com.internship.game.characters.companion.Companion;
+
 public class Character extends AbstractCharacter {
     private String name;
     private String gender;
     private String race;
+    private Companion companion;
+
+    public Character() {
+    }
+
+    public Character(String name, String gender, String race) {
+        this.name = name;
+        this.gender = gender;
+        this.race = race;
+    }
 
     public String getRace() {
         return race;
@@ -27,6 +39,14 @@ public class Character extends AbstractCharacter {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Companion getCompanion() {
+        return companion;
+    }
+
+    public void setCompanion(Companion companion) {
+        this.companion = companion;
     }
 
     @Override
@@ -55,6 +75,4 @@ public class Character extends AbstractCharacter {
                 "name='" + getName() + '\'' +
                 '}' + "\n" + "Character{" + "gender='" + getGender() + '\'' + '}';
     }
-
-
 }
