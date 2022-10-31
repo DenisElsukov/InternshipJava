@@ -1,4 +1,4 @@
-package com.internship.game.Inventory;
+package com.internship.game.inventory;
 
 import com.internship.game.characters.Character;
 

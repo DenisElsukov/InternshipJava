@@ -1,28 +1,18 @@
 package com.internship.game.characters;
 
-import com.internship.game.Inventory.Artifacts;
-import com.internship.game.Inventory.Equipment;
-import com.internship.game.Inventory.Weapon;
-import com.internship.game.characters.Environment.TimesDay;
-import com.internship.game.characters.Сompanion.Companion;
+import com.internship.game.inventory.Equipment;
+import com.internship.game.inventory.Weapon;
+import com.internship.game.characters.environment.TimesDay;
+import com.internship.game.characters.companion.Companion;
 
 public class CharacterFactory {
 
     public CharacterFactory() {
     }
 
-    public Character createCharacter(AbstractCharacter characterClass) {
-        Character character = new Character();
-        if (characterClass instanceof Wizard) {
-            character.updateCharacteristicsByClass(characterClass);
-        }
-
-        if (characterClass instanceof Warrior) {
-            character.updateCharacteristicsByClass(characterClass);
-        }
-
-        return character;
-    }
+    // TODO: implement methods to instantiate characters
+    // something like that:
+    // public Character create<Class>Character(...) { ... }
 
     public void printCharacteristics(Character character) {
         System.out.println(character.getAgility());
