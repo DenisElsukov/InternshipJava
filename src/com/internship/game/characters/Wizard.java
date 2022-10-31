@@ -17,7 +17,7 @@ public class Wizard extends Character {
 
     @Override
     public void greeting() {
-        System.out.println("'My name is " + getAgility() + "you done rightly choice'");
+        System.out.println("'My name is " + getName() + ", you done rightly choice'");
     }
 
     @Override
