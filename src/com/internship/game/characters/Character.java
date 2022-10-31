@@ -1,9 +1,19 @@
 package com.internship.game.characters;
 
+import com.internship.game.characters.companion.Companion;
+import com.internship.game.inventory.Equipment;
+import com.internship.game.inventory.Weapon;
+
 public class Character extends AbstractCharacter {
     private String name;
     private String gender;
     private String race;
+
+    private Weapon weapon;
+    private Equipment equipment;
+    private Companion companion;
+
+
 
     public String getRace() {
         return race;
@@ -27,6 +37,30 @@ public class Character extends AbstractCharacter {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Weapon getWeapon() {
+        return weapon;
+    }
+
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
+    }
+
+    public Equipment getEquipment() {
+        return equipment;
+    }
+
+    public void setEquipment(Equipment equipment) {
+        this.equipment = equipment;
+    }
+
+    public Companion getCompanion() {
+        return companion;
+    }
+
+    public void setCompanion(Companion companion) {
+        this.companion = companion;
     }
 
     @Override
