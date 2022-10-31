@@ -27,6 +27,7 @@ public enum Equipment {
         character.setAgility(character.getAgility() + equipment.getAgilityDifference());
     }
 
+
     public int getSpeedDifference() {
         return speedDifference;
     }
@@ -60,5 +61,9 @@ public enum Equipment {
     }
 
     private Equipment(int speedDifference, int energyDifference, int intelligenceDifference, int agilityDifference){
+        this.speedDifference = speedDifference;
+        this.energyDifference = energyDifference;
+        this.intelligenceDifference = energyDifference;
+        this.agilityDifference = agilityDifference;
     }
 }

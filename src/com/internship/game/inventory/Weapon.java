@@ -25,7 +25,7 @@ public enum Weapon {
         character.setIntelligence(character.getIntelligence() + weapon.getIntelligenceDifference());
         character.setAgility(character.getAgility() + weapon.getAgilityDifference());
     }
-
+        //to the future
         public void checkWeapon (Character character, Weapon weapon){
         if(weapon.equals(Weapon.EXCALIBUR)){
             switch (character.getRace()){
@@ -72,5 +72,9 @@ public enum Weapon {
     }
 
     private Weapon (int speedDifference, int energyDifference, int intelligenceDifference, int agilityDifference){
+        this.speedDifference = speedDifference;
+        this.energyDifference = energyDifference;
+        this.intelligenceDifference = energyDifference;
+        this.agilityDifference = agilityDifference;
     }
 }

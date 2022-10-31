@@ -14,17 +14,48 @@ public class CharacterFactory {
         return new Warrior(name, gender, race);
     }
 
-    public void printCharacteristics(Character character) {
+    public Character characterRogue() {
+        Character rogue = new Rogue();
+        return rogue;
+    }
+
+    public static Character createWizardCharacter(String name, String gender, String race){
+        Character wizard = new Wizard();
+        wizard.setName(name);
+        wizard.setGender(gender);
+        wizard.setRace(race);
+
+        return wizard;
+    }
+
+    public void printCharacteristics (Character character) {
+        System.out.println(character.getName());
+        System.out.println(character.getGender());
+        System.out.println(character.getRace());
         System.out.println(character.getAgility());
         System.out.println(character.getIntelligence());
         System.out.println(character.getEnergy());
         System.out.println(character.getSpeed());
     }
 
+    public static void printCharacterSummary (Character character){
+        character.greeting();
+        System.out.println("Name :" + character.getName());
+        System.out.println("Sex :" + character.getGender());
+        System.out.println("Race :" + character.getRace());
+        System.out.println();
+        System.out.println("Agility :" + character.getAgility());
+        System.out.println("Intelligence :" + character.getIntelligence());
+        System.out.println("Energy :" + character.getEnergy());
+        System.out.println("Speed :" + character.getSpeed());
+        System.out.println("Weapon: " +character.getWeapon());
+        System.out.println("Equipment: " +character.getEquipment());
+        System.out.println("Companion: " +character.getCompanion());
 
-    public void weaponChangeCharacteristics (Weapon weapon, Character character){
+    }
 
-        System.out.println("I choose " + weapon.name());
+
+    public static void weaponChangeCharacteristics (Weapon weapon, Character character) {
 
         switch (weapon.name()) {
             case "FISTS", "STAFF", "SWORD", "AXE", "BOW", "EXCALIBUR", "HOOD_SPIRIT" -> {
@@ -33,9 +64,7 @@ public class CharacterFactory {
         }
     }
 
-    public void armorChangeCharacteristics (Equipment equipment, Character character){
-
-        System.out.println("I choose " + equipment.name());
+    public static void equipmentChangeCharacteristics (Equipment equipment, Character character){
 
         switch (equipment.name()) {
             case "SKIN_ARMOR", "CHAIN_ARMOR", "ARMOR", "WHITE_ROBE", "MITHRIL", "SHINOBI_SHADOW", "GENDER_FUN" -> {
@@ -44,7 +73,7 @@ public class CharacterFactory {
         }
     }
 
-    public void companionGivePower(Companion companion, Character character) {
+    public static void companionGivePower(Companion companion, Character character) {
 
         System.out.println(companion.getGreeting());
 
@@ -64,8 +93,8 @@ public class CharacterFactory {
             case BEAR -> {
                 character.setEnergy(character.getEnergy() + 2);
                 character.setIntelligence(character.getIntelligence() + 1);
-                System.out.println("Energy +2");
-                System.out.println("Intelligence +1");
+//                System.out.println("Energy +2");
+//                System.out.println("Intelligence +1");
             }
             case TIGER -> {
                 character.setAgility(character.getAgility() + 2);

@@ -1,12 +1,16 @@
 package com.internship.game.characters;
 
 import com.internship.game.characters.companion.Companion;
+import com.internship.game.inventory.Equipment;
+import com.internship.game.inventory.Weapon;
 
 public class Character extends AbstractCharacter {
     private String name;
     private String gender;
     private String race;
     private Companion companion;
+    private Weapon weapon;
+    private Equipment equipment;
 
     public Character() {
     }
@@ -41,6 +45,22 @@ public class Character extends AbstractCharacter {
         this.name = name;
     }
 
+    public Weapon getWeapon() {
+        return weapon;
+    }
+
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
+    }
+
+    public Equipment getEquipment() {
+        return equipment;
+    }
+
+    public void setEquipment(Equipment equipment) {
+        this.equipment = equipment;
+    }
+
     public Companion getCompanion() {
         return companion;
     }
@@ -69,10 +89,10 @@ public class Character extends AbstractCharacter {
         System.out.println("OK, attacking");
     }
 
-    @Override
-    public String toString() {
+    //@Override
+    /*public String toString() {
         return "Character{" +
                 "name='" + getName() + '\'' +
-                '}' + "\n" + "Character{" + "gender='" + getGender() + '\'' + '}';
-    }
+                '}' + "\n" + "Character{" + "gender='" + getGender() + '\'' + '}'; */
 }
+
