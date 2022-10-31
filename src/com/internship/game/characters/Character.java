@@ -49,12 +49,12 @@ public class Character extends AbstractCharacter {
         System.out.println("OK, attacking");
     }
 
-    @Override
-    public String toString() {
+    //@Override
+    /*public String toString() {
         return "Character{" +
                 "name='" + getName() + '\'' +
-                '}' + "\n" + "Character{" + "gender='" + getGender() + '\'' + '}';
+                '}' + "\n" + "Character{" + "gender='" + getGender() + '\'' + '}'; */
     }
 
 
-}
+

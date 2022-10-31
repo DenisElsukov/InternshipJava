@@ -13,6 +13,15 @@ public class CharacterFactory {
     // TODO: implement methods to instantiate characters
     // something like that:
     // public Character create<Class>Character(...) { ... }
+    public Character characterRogue() {
+        Character rogue = new Rogue();
+        return rogue;
+    }
+    public void printStrings (Character character) {
+        System.out.println(character.getName());
+        System.out.println(character.getGender());
+        System.out.println(character.getRace());
+    }
 
     public void printCharacteristics(Character character) {
         System.out.println(character.getAgility());
