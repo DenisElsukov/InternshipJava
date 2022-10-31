@@ -7,32 +7,29 @@ import com.internship.game.characters.companion.Companion;
 import com.internship.game.inventory.Equipment;
 import com.internship.game.inventory.Weapon;
 
+import java.util.concurrent.CopyOnWriteArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
 
         CharacterFactory factory = new CharacterFactory();
-        Character warrior = factory.createWarriorCharacter("Artur", "male", "Human");
-        warrior.greeting();
+        Character warrior = CharacterFactory.createWarriorCharacter("Artur", "male", "Human");
 
         System.out.println("\nStarting characteristics warrior:");
-        factory.printCharacteristics(warrior);
+        CharacterFactory.printCharacterSummary(warrior);
 
-        Weapon sword = Weapon.SWORD;
-        factory.weaponChangeCharacteristics(sword, warrior);
-        System.out.println("\nCharacteristics warrior with sword:");
-        factory.printCharacteristics(warrior);
+        warrior.setWeapon(Weapon.SWORD);
+        CharacterFactory.weaponChangeCharacteristics(warrior.getWeapon(), warrior);
         warrior.attack();
 
-        Companion snake = Companion.SNAKE;
-        factory.companionGivePower(snake, warrior);
-        System.out.println("\nCharacteristics warrior with snake:");
-        factory.printCharacteristics(warrior);
+        warrior.setCompanion(Companion.SNAKE);
+        CharacterFactory.companionGivePower(warrior.getCompanion(), warrior);
 
-        Equipment mithril = Equipment.MITHRIL;
-        factory.equipmentChangeCharacteristics(mithril, warrior);
-        System.out.println("\nCharacteristics warrior with mithril:");
-        factory.printCharacteristics(warrior);
+        warrior.setEquipment(Equipment.MITHRIL);
+        CharacterFactory.equipmentChangeCharacteristics(warrior.getEquipment(), warrior);
+        System.out.println("\nCharacteristics warrior with mithril, sword and mithril:");
+        CharacterFactory.printCharacterSummary(warrior);
 
 
         Character rogue = factory.characterRogue();
