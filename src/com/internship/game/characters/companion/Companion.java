@@ -6,7 +6,8 @@ public enum Companion {
     TIGER("Patience and strength are my pluses!", 10),
     BEAR("I am loyal and ready to defend!", 10),
     SNAKE("Cunning and luck are on my side!", 10),
-    RAVEN("Wisdom is needed now more than ever!", 10);
+    RAVEN("Wisdom is needed now more than ever!", 10),
+    DOG("I'm ready to defend and extremely smart!",10);
 
     private final String greeting;
     private final int energy;

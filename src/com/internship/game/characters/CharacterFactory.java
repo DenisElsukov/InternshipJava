@@ -108,6 +108,13 @@ public class CharacterFactory {
                 System.out.println("Intelligence +2");
                 System.out.println("Speed +1");
             }
+            case DOG -> {
+                character.setIntelligence(character.getIntelligence() + 2);
+                character.setEnergy(character.getSpeed() + 1);
+                System.out.println("Intelligence +2");
+                System.out.println("Energy +1");
+            }
+
         }
     }
 
