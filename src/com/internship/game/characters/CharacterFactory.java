@@ -10,7 +10,7 @@ public class CharacterFactory {
     public CharacterFactory() {
     }
 
-    public Character createWarriorCharacter(String name, String gender, String race) {
+    public static Character createWarriorCharacter(String name, String gender, String race) {
         return new Warrior(name, gender, race);
     }
 
@@ -118,7 +118,7 @@ public class CharacterFactory {
         }
     }
 
-    public void influenceDay(TimesDay timesDay, Character character) {
+    public static void influenceDay(TimesDay timesDay, Character character) {
 
         System.out.println(timesDay.getAtmosphereAround());
 
