@@ -23,7 +23,7 @@ public class WeaponTest {
     }
 
     @Test
-    public void weaponStaffChangeIntelligence() {
+    public void weaponStaffNeedChangeCharacteristics() {
         defaultSpeed = hero.getSpeed();
         defaultEnergy = hero.getEnergy();
         defaultAgility = hero.getAgility();
