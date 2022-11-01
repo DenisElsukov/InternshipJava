@@ -2,7 +2,6 @@ package com.internship.game.characters;
 
 import com.internship.game.characters.companion.Companion;
 import com.internship.game.inventory.Equipment;
-import com.internship.game.inventory.Weapon;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,7 +14,6 @@ public class CharacterFactoryTest {
     public void forWarrior() {
         warrior = CharacterFactory.createWarriorCharacter("Torin","male", "dwarf");
     }
-
     @Test
     public void afterCreationWarriorNotNull() {
         Assert.assertNotNull(warrior);
