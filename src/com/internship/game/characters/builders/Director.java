@@ -14,20 +14,20 @@ public class Director {
     }
     public void constructWizard(Builder builder) {
         builder.setCharacterType(CharacterType.WIZARD);
-       // builder.setAgility(10.0);
-        //builder.setEnergy(11.0);
-        //builder.setSpeed(10);
-        //builder.setIntelligence(14.0);
+        builder.setAgility(10.0);
+        builder.setEnergy(11.0);
+        builder.setSpeed(10);
+        builder.setIntelligence(14.0);
         builder.setCompanion(Companion.DOG);
         builder.setWeapon(Weapon.STAFF);
         builder.setEquipment(Equipment.SKIN_ARMOR);
     }
     public void constructWarrior(Builder builder) {
         builder.setCharacterType(CharacterType.WARRIOR);
-        //builder.setAgility(12.0);
-        //builder.setEnergy(14.0);
-       // builder.setSpeed(10);
-       // builder.setIntelligence(12.0);
+        builder.setAgility(12.0);
+        builder.setEnergy(14.0);
+        builder.setSpeed(10);
+        builder.setIntelligence(12.0);
         builder.setCompanion(Companion.SNAKE);
         builder.setWeapon(Weapon.SWORD);
         builder.setEquipment(Equipment.MITHRIL);

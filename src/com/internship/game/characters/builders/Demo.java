@@ -15,27 +15,29 @@ public class Demo {
         CharactersManualBuilder manual = new CharactersManualBuilder();
         director.constructRogue(manual);
         Manual characterManual = manual.getResult();
-        System.out.println("Сharacteristics: \n" + characterManual.print());
+        System.out.println("Info: \n" + characterManual.print());
         // Wizard
-        /* director.constructWizard(builder);
+        director.constructWizard(builder);
         Character character1 = builder.getResult();
         System.out.println(character1.getType());
         CharacterType characterType1 = CharacterType.WIZARD;
         System.out.println(characterType1.getGreeting());
+        director.characterEditor();
         CharactersManualBuilder manual1 = new CharactersManualBuilder();
         director.constructWizard(manual1);
         Manual characterManual1 = manual1.getResult();
-        System.out.printf("Сharacteristics: \n" + characterManual1.print());
+        System.out.printf("Info: \n" + characterManual1.print());
         // Warrior
         director.constructWarrior(builder);
         Character character2 = builder.getResult();
         System.out.println(character2.getType());
         CharacterType characterType2 = CharacterType.WARRIOR;
         System.out.println(characterType2.getGreeting());
+        director.characterEditor();
         CharactersManualBuilder manual2 = new CharactersManualBuilder();
         director.constructWarrior(manual2);
         Manual characterManual2 = manual2.getResult();
-        System.out.println("Сharacteristics: \n" + characterManual2.print()); */
+        System.out.println("Info: \n" + characterManual2.print());
     }
 }
 
