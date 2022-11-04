@@ -1,7 +1,7 @@
 package com.internship.game.characters.builders;
 
 public enum CharacterType {
-    WIZARD ("My name is Merlin, you done rightly choice", "'I'm too old for this shit", "A wizard is never late. He arrives precisely when he means to", "You shall not pass!"), ROGUE("Hello. I stole an apple for you.", "I hop when you blink", "Hop!", "\\'Slit!\\' \\'Crrrr!\\'"), WARRIOR("Greetings! I am Arthur! I'm always ready to fight!", "I will do it!", "Only forward!" , "Attack now! I was born to win!");
+    WIZARD ("My name is Gandalf, you done rightly choice", "'I'm too old for this shit", "A wizard is never late. He arrives precisely when he means to", "You shall not pass!"), ROGUE("Hello. I stole an apple for you.", "I hop when you blink", "Hop!", "\\'Slit!\\' \\'Crrrr!\\'"), WARRIOR("Greetings! I am Arthur! I'm always ready to fight!", "I will do it!", "Only forward!" , "Attack now! I was born to win!");
 
     private String greeting;
     private String actions;

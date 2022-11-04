@@ -9,4 +9,7 @@ public interface Builder {
     void setName(String name);
     void setGender(String gender);
     void setRace(String race);
+    void setCompanion (Companion companion);
+    void setWeapon(Weapon weapon);
+    void setEquipment(Equipment equipment);
 }

@@ -9,6 +9,9 @@ public class CharactersManualBuilder implements Builder {
     private String name;
     private String gender;
     private String race;
+    private Companion companion;
+    private Weapon weapon;
+    private Equipment equipment;
 
     @Override
     public void setCharacterType(CharacterType type) {
@@ -50,7 +53,22 @@ public class CharactersManualBuilder implements Builder {
         this.race = race;
     }
 
+    @Override
+    public void setCompanion(Companion companion) {
+        this.companion = companion;
+    }
+
+    @Override
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
+    }
+
+    @Override
+    public void setEquipment(Equipment equipment) {
+        this.equipment = equipment;
+    }
+
     public Manual getResult() {
-        return new Manual (type ,speed ,agility,energy,intelligence,name,gender,race);
+        return new Manual (type ,speed ,agility,energy,intelligence,name,gender,race, companion, weapon, equipment);
     }
 }

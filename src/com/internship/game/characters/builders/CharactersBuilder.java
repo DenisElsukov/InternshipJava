@@ -10,6 +10,9 @@ public class CharactersBuilder implements Builder {
     private String name;
     private String gender;
     private String race;
+    private Companion companion;
+    private Weapon weapon;
+    private Equipment equipment;
 
     @Override
     public void setCharacterType(CharacterType type) {
@@ -50,8 +53,24 @@ public class CharactersBuilder implements Builder {
     public void setRace(String race) {
         this.race = race;
     }
- public Character getResult() {
-        return new Character (type,speed,agility,energy,intelligence,name,gender,race);
+
+    @Override
+    public void setCompanion(Companion companion) {
+        this.companion = companion;
+    }
+
+    @Override
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
+    }
+
+    @Override
+    public void setEquipment(Equipment equipment) {
+        this.equipment = equipment;
+    }
+
+    public Character getResult() {
+        return new Character (type,speed,agility,energy,intelligence,name,gender,race, companion, weapon, equipment);
  }
 
 }

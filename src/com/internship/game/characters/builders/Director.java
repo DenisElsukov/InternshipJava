@@ -10,6 +10,9 @@ public class Director {
         builder.setName("Mike");
         builder.setGender("Male");
         builder.setRace("Human");
+        builder.setCompanion(Companion.EAGLE);
+        builder.setWeapon(Weapon.FISTS);
+        builder.setEquipment(Equipment.WHITE_ROBE);
     }
     public void constructWizard(Builder builder) {
         builder.setCharacterType(CharacterType.WIZARD);
@@ -17,9 +20,12 @@ public class Director {
         builder.setEnergy(11.0);
         builder.setSpeed(10);
         builder.setIntelligence(14.0);
-        builder.setName("Merlin");
+        builder.setName("Gandalf");
         builder.setGender("Male");
         builder.setRace("Human");
+        builder.setCompanion(Companion.DOG);
+        builder.setWeapon(Weapon.STAFF);
+        builder.setEquipment(Equipment.SKIN_ARMOR);
     }
     public void constructWarrior(Builder builder) {
         builder.setCharacterType(CharacterType.WARRIOR);
@@ -30,5 +36,8 @@ public class Director {
         builder.setName("Arthur");
         builder.setGender("Male");
         builder.setRace("Human");
+        builder.setCompanion(Companion.SNAKE);
+        builder.setWeapon(Weapon.SWORD);
+        builder.setEquipment(Equipment.MITHRIL);
     }
 }

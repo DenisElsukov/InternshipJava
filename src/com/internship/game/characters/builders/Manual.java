@@ -9,8 +9,11 @@ public class Manual {
     private final String name;
     private final String gender;
     private final String race;
+    private final Companion companion;
+    private final Weapon weapon;
+    private final Equipment equipment;
 
-    public Manual (CharacterType type,int speed,double agility, double energy,double intelligence,String name,String gender, String race) {
+    public Manual (CharacterType type,int speed,double agility, double energy,double intelligence,String name,String gender, String race, Companion companion, Weapon weapon, Equipment equipment) {
         this.type=type;
         this.speed = speed;
         this.agility = agility;
@@ -19,6 +22,9 @@ public class Manual {
         this.name = name;
         this.gender = gender;
         this.race = race;
+        this.companion = companion;
+        this.weapon = weapon;
+        this.equipment = equipment;
     }
     public String print() {
         String info = "";
@@ -30,6 +36,10 @@ public class Manual {
         info += "Name: " + name + "\n";
         info += "Gender: " + gender + "\n";
         info += "Race: " + race + "\n";
+        info += "Companion: " + companion + "\n";
+        info += "+" + companion.getEnergy() + " energy" + "\n";
+        info += "Weapon: " + weapon + "\n";
+        info += "Equipment: " + equipment + "\n";
         return info;
     }
 }
