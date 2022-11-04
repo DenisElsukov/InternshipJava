@@ -7,6 +7,8 @@ public class Demo {
         director.constructRogue(builder);
         Character character =  builder.getResult();
         System.out.println(character.getType());
+        CharacterType characterType = CharacterType.ROGUE;
+        System.out.println(characterType.getGreeting());;
         CharactersManualBuilder manual = new CharactersManualBuilder();
         director.constructRogue(manual);
         Manual characterManual = manual.getResult();
