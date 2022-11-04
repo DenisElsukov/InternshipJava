@@ -6,9 +6,6 @@ public interface Builder {
     void setAgility(double agility);
     void setEnergy(double energy);
     void setIntelligence(double intelligence);
-    void setName(String name);
-    void setGender(String gender);
-    void setRace(String race);
     void setCompanion (Companion companion);
     void setWeapon(Weapon weapon);
     void setEquipment(Equipment equipment);

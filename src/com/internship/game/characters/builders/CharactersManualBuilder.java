@@ -6,9 +6,6 @@ public class CharactersManualBuilder implements Builder {
     private double agility;
     private double energy;
     private double intelligence;
-    private String name;
-    private String gender;
-    private String race;
     private Companion companion;
     private Weapon weapon;
     private Equipment equipment;
@@ -39,23 +36,8 @@ public class CharactersManualBuilder implements Builder {
     }
 
     @Override
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    @Override
-    public void setRace(String race) {
-        this.race = race;
-    }
-
-    @Override
     public void setCompanion(Companion companion) {
-        this.companion = companion;
+     this.companion = companion;
     }
 
     @Override
@@ -69,6 +51,6 @@ public class CharactersManualBuilder implements Builder {
     }
 
     public Manual getResult() {
-        return new Manual (type ,speed ,agility,energy,intelligence,name,gender,race, companion, weapon, equipment);
+        return new Manual (type ,speed ,agility,energy,intelligence, companion, weapon, equipment);
     }
 }

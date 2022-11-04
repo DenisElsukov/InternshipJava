@@ -1,4 +1,5 @@
 package com.internship.game.characters.builders;
+import java.util.Scanner;
 
 public class Demo {
     public static void main(String[] args) {
@@ -10,12 +11,13 @@ public class Demo {
         System.out.println(character.getType());
         CharacterType characterType = CharacterType.ROGUE;
         System.out.println(characterType.getGreeting());
+        director.characterEditor();
         CharactersManualBuilder manual = new CharactersManualBuilder();
         director.constructRogue(manual);
         Manual characterManual = manual.getResult();
         System.out.println("Сharacteristics: \n" + characterManual.print());
         // Wizard
-        director.constructWizard(builder);
+        /* director.constructWizard(builder);
         Character character1 = builder.getResult();
         System.out.println(character1.getType());
         CharacterType characterType1 = CharacterType.WIZARD;
@@ -33,6 +35,7 @@ public class Demo {
         CharactersManualBuilder manual2 = new CharactersManualBuilder();
         director.constructWarrior(manual2);
         Manual characterManual2 = manual2.getResult();
-        System.out.println("Сharacteristics: \n" + characterManual2.print());
+        System.out.println("Сharacteristics: \n" + characterManual2.print()); */
     }
 }
+
