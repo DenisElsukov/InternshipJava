@@ -4,7 +4,7 @@ public class Demo {
     public static void main(String[] args) {
         Director director = new Director();
         CharactersBuilder builder = new CharactersBuilder();
-
+        // Rogue
         director.constructRogue(builder);
         Character character =  builder.getResult();
         System.out.println(character.getType());
@@ -14,7 +14,7 @@ public class Demo {
         director.constructRogue(manual);
         Manual characterManual = manual.getResult();
         System.out.println("Сharacteristics: \n" + characterManual.print());
-
+        //Wizard
         director.constructWizard(builder);
         Character character1 = builder.getResult();
         System.out.println(character1.getType());
@@ -24,7 +24,7 @@ public class Demo {
         director.constructWizard(manual1);
         Manual characterManual1 = manual1.getResult();
         System.out.printf("Сharacteristics: \n" + characterManual1.print());
-        
+        //Warrior
         director.constructWarrior(builder);
         Character character2 = builder.getResult();
         System.out.println(character2.getType());
