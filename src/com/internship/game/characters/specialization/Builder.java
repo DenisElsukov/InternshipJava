@@ -1,4 +1,4 @@
-package com.internship.game.characters.characters.specialization;
+package com.internship.game.characters.specialization;
 
 public interface Builder {
 

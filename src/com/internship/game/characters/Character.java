@@ -1,9 +1,9 @@
-package com.internship.game.characters.characters;
+package com.internship.game.characters;
 
-import com.internship.game.characters.characters.companion.Companion;
-import com.internship.game.characters.characters.specialization.Specialization;
-import com.internship.game.characters.inventory.Equipment;
-import com.internship.game.characters.inventory.Weapon;
+import com.internship.game.characters.companion.Companion;
+import com.internship.game.characters.specialization.Specialization;
+import com.internship.game.inventory.Equipment;
+import com.internship.game.inventory.Weapon;
 
 public class Character {
 

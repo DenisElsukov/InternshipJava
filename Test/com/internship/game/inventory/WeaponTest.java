@@ -1,4 +1,4 @@
-package com.internship.game.characters.inventory;
+package com.internship.game.inventory;
 
 import org.junit.Before;
 import org.junit.jupiter.api.Test;

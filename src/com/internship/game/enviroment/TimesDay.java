@@ -1,4 +1,4 @@
-package com.internship.game.characters.enviroment;
+package com.internship.game.enviroment;
 
 public enum TimesDay {
 

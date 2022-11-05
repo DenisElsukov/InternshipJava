@@ -1,4 +1,4 @@
-package com.internship.game.characters.characters;
+package com.internship.game.characters;
 
 public class RogueOLD {
 

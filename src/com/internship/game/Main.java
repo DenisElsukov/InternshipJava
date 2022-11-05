@@ -1,15 +1,13 @@
-package com.internship.game.characters;
+package com.internship.game;
 
-import com.internship.game.characters.characters.Character;
-import com.internship.game.characters.characters.CharacterBuilder;
-import com.internship.game.characters.characters.companion.Companion;
-import com.internship.game.characters.inventory.Equipment;
-import com.internship.game.characters.inventory.Weapon;
-import com.internship.game.characters.characters.specialization.Director;
-import com.internship.game.characters.characters.specialization.Specialization;
-import com.internship.game.characters.characters.specialization.SpecializationBuilder;
-
-import java.lang.ref.SoftReference;
+import com.internship.game.characters.Character;
+import com.internship.game.characters.CharacterBuilder;
+import com.internship.game.characters.companion.Companion;
+import com.internship.game.inventory.Equipment;
+import com.internship.game.inventory.Weapon;
+import com.internship.game.characters.specialization.Director;
+import com.internship.game.characters.specialization.Specialization;
+import com.internship.game.characters.specialization.SpecializationBuilder;
 
 public class Main {
 

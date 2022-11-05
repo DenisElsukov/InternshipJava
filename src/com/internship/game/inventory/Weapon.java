@@ -1,7 +1,7 @@
-package com.internship.game.characters.inventory;
+package com.internship.game.inventory;
 
-import com.internship.game.characters.characters.Character;
-import com.internship.game.characters.characters.specialization.Specialization;
+import com.internship.game.characters.Character;
+import com.internship.game.characters.specialization.Specialization;
 
 public enum Weapon {
 
