@@ -1,22 +1,35 @@
-package com.internship.game.inventory;
+package com.internship.game.characters.inventory;
 
-import com.internship.game.characters.Character;
+import com.internship.game.characters.characters.Character;
+import com.internship.game.characters.characters.specialization.Specialization;
 
-public enum Artifacts {
+public enum Equipment {
+    //Armors
+    SKIN_ARMOR(0,0,0,1),
+    CHAIN_ARMOR(0,1,0,1),
+    ARMOR(-1, 2, 0, 1),
 
-    RING_OF_POWER(5,5,5,5);
+    //LEGENDARY ARMOR
+    WHITE_ROBE(0,6,5,0),
+    MITHRIL(2,4,2,3),
+    SHINOBI_SHADOW(4,2,0,5),
+    GENDER_FUN(0,0,0,0);
 
     private int speedDifference;
     private int energyDifference;
     private int intelligenceDifference;
     private int agilityDifference;
 
+
     public static void boostCharacteristics (Equipment equipment, Character character){
-        character.setEnergy(character.getEnergy() + equipment.getEnergyDifference());
-        character.setSpeed(character.getSpeed() + equipment.getSpeedDifference());
-        character.setIntelligence(character.getIntelligence() + equipment.getIntelligenceDifference());
-        character.setAgility(character.getAgility() + equipment.getAgilityDifference());
+        Specialization specialization = character.getSpecialization();
+
+        specialization.setEnergy(specialization.getEnergy() + equipment.getEnergyDifference());
+        specialization.setSpeed(specialization.getSpeed() + equipment.getSpeedDifference());
+        specialization.setIntelligence(specialization.getIntelligence() + equipment.getIntelligenceDifference());
+        specialization.setAgility(specialization.getAgility() + equipment.getAgilityDifference());
     }
+
 
     public int getSpeedDifference() {
         return speedDifference;
@@ -50,11 +63,10 @@ public enum Artifacts {
         this.agilityDifference = agilityDifference;
     }
 
-    private Artifacts (int speedDifference, int energyDifference, int intelligenceDifference, int agilityDifference){
+    private Equipment(int speedDifference, int energyDifference, int intelligenceDifference, int agilityDifference){
         this.speedDifference = speedDifference;
         this.energyDifference = energyDifference;
         this.intelligenceDifference = energyDifference;
         this.agilityDifference = agilityDifference;
     }
-
 }

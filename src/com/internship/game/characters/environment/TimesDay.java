@@ -20,4 +20,57 @@ public enum TimesDay {
         return atmosphereAround;
     }
 
+
+    //    public static void influenceDay(TimesDay timesDay, Character character) {
+//
+//        System.out.println(timesDay.getAtmosphereAround());
+//
+//        switch (timesDay) {
+//            case SUNRISE -> {
+//                if (character.getRace().equals("Elf")) {
+//                    character.setIntelligence(character.getIntelligence() + 1);
+//                    System.out.println("Intelligence +1");
+//                }
+//            }
+//            case MORNING -> {
+//                if (character instanceof WarriorBuilder) {
+//                    character.setEnergy(character.getEnergy() + 1);
+//                    System.out.println("Energy +1");
+//                }
+//            }
+//            case NOON -> {
+//                if (character.getRace().equals("Gnome")) {
+//                    character.setSpeed(character.getSpeed() + 1);
+//                    System.out.println("Speed +1");
+//                }
+//            }
+//            case EVENING -> {
+//                if (character instanceof Wizard) {
+//                    character.setAgility(character.getAgility() + 1);
+//                    System.out.println("Agility +1");
+//                }
+//                ;
+//            }
+//            case SUNSET -> {
+//                if (character.getRace().equals("Human")) {
+//                    character.setEnergy(character.getEnergy() + 1);
+//                    System.out.println("Energy +1");
+//                }
+//            }
+//            case NIGHT -> {
+//                if (character.getRace().equals("Orc")) {
+//                    character.setSpeed(character.getSpeed() + 1);
+//                    System.out.println("Speed +1");
+//                }
+//            }
+//
+//            case FULL_MOON -> {
+//                if (character instanceof RogueBuilder) {
+//                    character.setSpeed(character.getSpeed() + 1);
+//                    System.out.println("Speed +1");
+//                }
+//            }
+//        }
+//    }
+
 }

@@ -1,6 +1,8 @@
-package com.internship.game.inventory;
+package com.internship.game.characters.inventory;
 
-import com.internship.game.characters.Character;
+import com.internship.game.characters.characters.Character;
+import com.internship.game.characters.characters.specialization.Specialization;
+
 public enum Weapon {
 
     //Standart weapon
@@ -19,21 +21,23 @@ public enum Weapon {
     private int intelligenceDifference;
     private int agilityDifference;
 
-    public static void boostCharacteristics (Weapon weapon,Character character){
-        character.setEnergy(character.getEnergy() + weapon.getEnergyDifference());
-        character.setSpeed(character.getSpeed() + weapon.getSpeedDifference());
-        character.setIntelligence(character.getIntelligence() + weapon.getIntelligenceDifference());
-        character.setAgility(character.getAgility() + weapon.getAgilityDifference());
+    public static void boostCharacteristics (Weapon weapon, Character character){
+        Specialization specialization = character.getSpecialization();
+
+        specialization.setEnergy(specialization.getEnergy() + weapon.getEnergyDifference());
+        specialization.setSpeed(specialization.getSpeed() + weapon.getSpeedDifference());
+        specialization.setIntelligence(specialization.getIntelligence() + weapon.getIntelligenceDifference());
+        specialization.setAgility(specialization.getAgility() + weapon.getAgilityDifference());
     }
         //to the future
         public void checkWeapon (Character character, Weapon weapon){
         if(weapon.equals(Weapon.EXCALIBUR)){
             switch (character.getRace()){
                 case "human":
-                    character.setEnergy(character.getEnergy() + 3);
+                    character.getSpecialization().setEnergy(character.getSpecialization().getEnergy() + 3);
                     break;
                 case "elf":
-                    character.setAgility(character.getAgility() + 3);
+                    character.getSpecialization().setAgility(character.getSpecialization().getAgility() + 3);
                     break;
             }
         }
