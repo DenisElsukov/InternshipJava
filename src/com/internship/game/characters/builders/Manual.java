@@ -29,7 +29,15 @@ public class Manual {
         info += "Companion: " + companion + "\n";
         info += "+" + companion.getEnergy() + " energy" + "\n";
         info += "Weapon: " + weapon + "\n";
+        info += "+" + weapon.getEnergyDifference() +" energy" + "\n";
+        info += "+" + weapon.getAgilityDifference() +" agility" + "\n";
+        info += "+" + weapon.getSpeedDifference() +" speed" + "\n";
+        info += "+" + weapon.getIntelligenceDifference() +" intelligence" + "\n";
         info += "Equipment: " + equipment + "\n";
+        info += "+" + equipment.getEnergyDifference() +" energy" + "\n";
+        info += "+" + equipment.getAgilityDifference() +" agility" + "\n";
+        info += "+" + equipment.getSpeedDifference() +" speed" + "\n";
+        info += "+" + equipment.getIntelligenceDifference() +" intelligence" + "\n";
         return info;
     }
 }
