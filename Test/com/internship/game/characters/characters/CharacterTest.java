@@ -3,7 +3,6 @@ package com.internship.game.characters.characters;
 import com.internship.game.characters.characters.specialization.Director;
 import com.internship.game.characters.characters.companion.Companion;
 import com.internship.game.characters.characters.specialization.SpecializationBuilder;
-import com.internship.game.characters.inventory.Equipment;
 import com.internship.game.characters.characters.specialization.Specialization;
 import org.junit.Assert;
 import org.junit.Before;
