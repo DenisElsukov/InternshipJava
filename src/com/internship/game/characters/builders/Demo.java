@@ -16,10 +16,9 @@ public class Demo {
         director.constructRogue(manual);
         Manual characterManual = manual.getResult();
         System.out.println("Info: \n" + characterManual.print());
-        director.characterEditor();
         System.out.println(characterType.getGreeting());
-        System.out.println("Do you want to select another character?");
-        String selection = sc.nextLine();
+        director.characterEditor();
+
 
         // Wizard
         director.constructWizard(builder);
@@ -30,10 +29,9 @@ public class Demo {
         director.constructWizard(manual1);
         Manual characterManual1 = manual1.getResult();
         System.out.printf("Info: \n" + characterManual1.print());
-        director.characterEditor();
         System.out.println(characterType1.getGreeting());
-        System.out.println("Do you want to select another character?");
-        String selection1 = sc.nextLine();
+        director.characterEditor();
+
 
         // Warrior
         director.constructWarrior(builder);
@@ -44,10 +42,9 @@ public class Demo {
         director.constructWarrior(manual2);
         Manual characterManual2 = manual2.getResult();
         System.out.println("Info: \n" + characterManual2.print());
-        director.characterEditor();
         System.out.println(characterType2.getGreeting());
-        System.out.println("Do you want to select another character?");
-        String selection2 = sc.nextLine();
+        director.characterEditor();
+
     }
 }
 

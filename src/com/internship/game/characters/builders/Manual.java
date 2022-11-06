@@ -1,43 +1,37 @@
 package com.internship.game.characters.builders;
 
+import java.util.Scanner;
+
 public class Manual {
     private final CharacterType type;
-    private final int speed;
-    private final double agility;
-    private final double energy;
-    private final double intelligence;
     private final Companion companion;
     private final Weapon weapon;
     private final Equipment equipment;
 
-    public Manual (CharacterType type,int speed,double agility, double energy,double intelligence, Companion companion, Weapon weapon, Equipment equipment) {
+    public Manual (CharacterType type, Companion companion, Weapon weapon, Equipment equipment) {
         this.type=type;
-        this.speed = speed;
-        this.agility = agility;
-        this.energy = energy;
-        this.intelligence = intelligence;
         this.companion = companion;
         this.weapon = weapon;
         this.equipment = equipment;
     }
     public String print() {
         String info = "";
-        info += "Speed: " + speed + "\n";
-        info += "Agility: " +agility + "\n";
-        info += "Energy: " + energy + "\n";
-        info += "Intelligence: " + intelligence + "\n";
+        info += "Speed: " + type.getSpeed() + "\n";
+        info += "Agility: " + type.getAgility() + "\n";
+        info += "Energy: " + type.getEnergy() + "\n";
+        info += "Intelligence: " + type.getIntelligence() + "\n";
         info += "Companion: " + companion + "\n";
-        info += "+" + companion.getEnergy() + " energy" + "\n";
+        info += type.getEnergy() + companion.getEnergy() + " your energy now" + "\n";
         info += "Weapon: " + weapon + "\n";
-        info += "+" + weapon.getEnergyDifference() +" energy" + "\n";
-        info += "+" + weapon.getAgilityDifference() +" agility" + "\n";
-        info += "+" + weapon.getSpeedDifference() +" speed" + "\n";
-        info += "+" + weapon.getIntelligenceDifference() +" intelligence" + "\n";
+        info += (weapon.getSpeedDifference() + type.getSpeed()) + "\n";
+        info += (weapon.getAgilityDifference() + type.getAgility()) + "\n";
+        info += (weapon.getEnergyDifference() + type.getEnergy()) + companion.getEnergy() + "\n";
+        info += (weapon.getIntelligenceDifference() + type.getIntelligence()) + "\n";
         info += "Equipment: " + equipment + "\n";
-        info += "+" + equipment.getEnergyDifference() +" energy" + "\n";
-        info += "+" + equipment.getAgilityDifference() +" agility" + "\n";
-        info += "+" + equipment.getSpeedDifference() +" speed" + "\n";
-        info += "+" + equipment.getIntelligenceDifference() +" intelligence" + "\n";
+        info += (equipment.getSpeedDifference() + type.getSpeed()) + weapon.getSpeedDifference()  + "\n";
+        info += (equipment.getAgilityDifference() + type.getAgility()) + weapon.getAgilityDifference() + "\n";
+        info += (equipment.getEnergyDifference() + type.getEnergy() + weapon.getEnergyDifference() + companion.getEnergy()) + "\n";
+        info += (equipment.getIntelligenceDifference() + type.getIntelligence()) + weapon.getIntelligenceDifference() + "\n";
         return info;
     }
 }
