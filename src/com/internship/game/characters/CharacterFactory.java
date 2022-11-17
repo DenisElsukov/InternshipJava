@@ -1,5 +1,6 @@
 package com.internship.game.characters;
 
+import com.internship.game.characters.builder_by_evgen.Character;
 import com.internship.game.inventory.Equipment;
 import com.internship.game.inventory.Weapon;
 import com.internship.game.characters.environment.TimesDay;
@@ -39,7 +40,7 @@ public class CharacterFactory {
     }
 
     public static void printCharacterSummary (Character character){
-        character.greeting();
+//        character.greeting();
         System.out.println("Name :" + character.getName());
         System.out.println("Sex :" + character.getGender());
         System.out.println("Race :" + character.getRace());

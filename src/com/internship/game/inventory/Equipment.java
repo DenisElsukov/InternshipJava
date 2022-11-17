@@ -1,6 +1,6 @@
 package com.internship.game.inventory;
 
-import com.internship.game.characters.Character;
+import com.internship.game.characters.AbstractCharacter;
 
 public enum Equipment {
     //Armors
@@ -14,53 +14,53 @@ public enum Equipment {
     SHINOBI_SHADOW(4,2,0,5),
     GENDER_FUN(0,0,0,0);
 
-    private int speedDifference;
-    private int energyDifference;
-    private int intelligenceDifference;
-    private int agilityDifference;
+    private double speedDifference;
+    private double energyDifference;
+    private double intelligenceDifference;
+    private double agilityDifference;
 
 
-    public static void boostCharacteristics (Equipment equipment, Character character){
+   public static void boostCharacteristics (Equipment equipment, AbstractCharacter character){
         character.setEnergy(character.getEnergy() + equipment.getEnergyDifference());
-        character.setSpeed(character.getSpeed() + equipment.getSpeedDifference());
+        character.setSpeed((int)(character.getSpeed() + equipment.getSpeedDifference()));
         character.setIntelligence(character.getIntelligence() + equipment.getIntelligenceDifference());
         character.setAgility(character.getAgility() + equipment.getAgilityDifference());
     }
 
 
-    public int getSpeedDifference() {
+    public double getSpeedDifference() {
         return speedDifference;
     }
 
-    public void setSpeedDifference(int speedDifference) {
+    public void setSpeedDifference(double speedDifference) {
         this.speedDifference = speedDifference;
     }
 
-    public int getEnergyDifference() {
+    public double getEnergyDifference() {
         return energyDifference;
     }
 
-    public void setEnergyDifference(int energyDifference) {
+    public void setEnergyDifference(double energyDifference) {
         this.energyDifference = energyDifference;
     }
 
-    public int getIntelligenceDifference() {
+    public double getIntelligenceDifference() {
         return intelligenceDifference;
     }
 
-    public void setIntelligenceDifference(int intelligenceDifference) {
+    public void setIntelligenceDifference(double intelligenceDifference) {
         this.intelligenceDifference = intelligenceDifference;
     }
 
-    public int getAgilityDifference() {
+    public double getAgilityDifference() {
         return agilityDifference;
     }
 
-    public void setAgilityDifference(int agilityDifference) {
+    public void setAgilityDifference(double agilityDifference) {
         this.agilityDifference = agilityDifference;
     }
 
-    private Equipment(int speedDifference, int energyDifference, int intelligenceDifference, int agilityDifference){
+    private Equipment(double speedDifference, double energyDifference, double intelligenceDifference, double agilityDifference){
         this.speedDifference = speedDifference;
         this.energyDifference = energyDifference;
         this.intelligenceDifference = energyDifference;

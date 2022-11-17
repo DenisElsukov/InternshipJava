@@ -1,32 +1,33 @@
 package com.internship.game.inventory;
 
-import com.internship.game.characters.Character;
+import com.internship.game.characters.AbstractCharacter;
 
 public enum Artifacts {
 
     RING_OF_POWER(5,5,5,5);
 
-    private int speedDifference;
-    private int energyDifference;
-    private int intelligenceDifference;
-    private int agilityDifference;
+    private double speedDifference;
+    private double energyDifference;
+    private double intelligenceDifference;
+    private double agilityDifference;
 
-    public static void boostCharacteristics (Equipment equipment, Character character){
+    public void boostCharacteristics (Equipment equipment, AbstractCharacter character){
         character.setEnergy(character.getEnergy() + equipment.getEnergyDifference());
-        character.setSpeed(character.getSpeed() + equipment.getSpeedDifference());
+        character.setSpeed((int)(character.getSpeed() + equipment.getSpeedDifference()));
         character.setIntelligence(character.getIntelligence() + equipment.getIntelligenceDifference());
         character.setAgility(character.getAgility() + equipment.getAgilityDifference());
+
     }
 
-    public int getSpeedDifference() {
+    public double getSpeedDifference() {
         return speedDifference;
     }
 
-    public void setSpeedDifference(int speedDifference) {
+    public void setSpeedDifference(double speedDifference) {
         this.speedDifference = speedDifference;
     }
 
-    public int getEnergyDifference() {
+    public double getEnergyDifference() {
         return energyDifference;
     }
 
@@ -34,7 +35,7 @@ public enum Artifacts {
         this.energyDifference = energyDifference;
     }
 
-    public int getIntelligenceDifference() {
+    public double getIntelligenceDifference() {
         return intelligenceDifference;
     }
 
@@ -42,7 +43,7 @@ public enum Artifacts {
         this.intelligenceDifference = intelligenceDifference;
     }
 
-    public int getAgilityDifference() {
+    public double getAgilityDifference() {
         return agilityDifference;
     }
 

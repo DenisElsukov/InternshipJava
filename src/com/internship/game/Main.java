@@ -1,13 +1,10 @@
 package com.internship.game;
 
-import com.internship.game.characters.Character;
+import com.internship.game.characters.builder_by_evgen.Character;
 import com.internship.game.characters.CharacterFactory;
-import com.internship.game.characters.Rogue;
 import com.internship.game.characters.companion.Companion;
 import com.internship.game.inventory.Equipment;
 import com.internship.game.inventory.Weapon;
-
-import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Main {
 

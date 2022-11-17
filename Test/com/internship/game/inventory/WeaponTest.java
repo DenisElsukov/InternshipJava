@@ -1,6 +1,6 @@
 package com.internship.game.inventory;
 
-import com.internship.game.characters.Character;
+import com.internship.game.characters.builder_by_evgen.Character;
 import com.internship.game.characters.CharacterFactory;
 import org.junit.Assert;
 import org.junit.Before;
@@ -8,7 +8,7 @@ import org.junit.Test;
 
 public class WeaponTest {
     private final double EPS = 1e-9;
-    int defaultSpeed;
+    double defaultSpeed;
     double defaultEnergy;
     double defaultIntelligence;
     double defaultAgility;

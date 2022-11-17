@@ -1,5 +1,7 @@
 package com.internship.game.characters;
 
+import com.internship.game.characters.builder_by_evgen.Character;
+
 public class Warrior extends Character {
 
     // Buffs by Hero's class

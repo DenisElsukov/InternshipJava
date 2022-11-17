@@ -1,5 +1,6 @@
 package com.internship.game.characters;
 
+import com.internship.game.characters.builder_by_evgen.Character;
 import com.internship.game.characters.companion.Companion;
 import com.internship.game.inventory.Equipment;
 import org.junit.Assert;

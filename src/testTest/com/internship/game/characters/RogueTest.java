@@ -1,6 +1,5 @@
 package testTest.com.internship.game.characters;
 import com.internship.game.characters.*;
-import com.internship.game.characters.Character;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestFactory;
 

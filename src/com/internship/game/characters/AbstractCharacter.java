@@ -4,7 +4,7 @@ public abstract class AbstractCharacter implements CharacterInterface {
     private double agility = 10;
     private double energy = 10;
     private double intelligence = 10;
-    private int speed = 10;
+    private double speed = 10;
 
     public double getAgility() {
         return agility;
@@ -14,7 +14,7 @@ public abstract class AbstractCharacter implements CharacterInterface {
         this.agility = agility;
     }
 
-    public int getSpeed() {
+    public double getSpeed() {
         return speed;
     }
 
@@ -38,13 +38,17 @@ public abstract class AbstractCharacter implements CharacterInterface {
         this.intelligence = intelligence;
     }
 
-    public void updateCharacteristicsByClass(AbstractCharacter character) {
-        setIntelligence(character.getIntelligence());
-        setSpeed(character.getSpeed());
-        setAgility(character.getAgility());
-        setEnergy(character.getEnergy());
+//    public void updateCharacteristicsByClass(AbstractCharacter character) {
+//        setIntelligence(character.getIntelligence());
+//        setSpeed(character.getSpeed());
+//        setAgility(character.getAgility());
+//        setEnergy(character.getEnergy());
+//    }
+
+    public AbstractCharacter(String name, String gender, String race) {
     }
+    public AbstractCharacter(){
 
-
+    }
 
 }
