@@ -1,7 +1,7 @@
 package com.internship.game.characters;
 
-import com.internship.game.characters.specialization.Director;
 import com.internship.game.characters.companion.Companion;
+import com.internship.game.characters.specialization.Director;
 import com.internship.game.characters.specialization.SpecializationBuilder;
 import com.internship.game.characters.specialization.Specialization;
 import org.junit.Assert;

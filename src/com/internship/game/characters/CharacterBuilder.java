@@ -1,7 +1,7 @@
 package com.internship.game.characters;
 
-import com.internship.game.characters.specialization.Specialization;
 import com.internship.game.characters.companion.Companion;
+import com.internship.game.characters.specialization.Specialization;
 
 public class CharacterBuilder {
 
