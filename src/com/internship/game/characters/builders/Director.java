@@ -1,24 +1,26 @@
 package com.internship.game.characters.builders;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Director {
-    public void constructRogue(Builder builder) {
+
+    public void constructRogue(Builder builder) throws IOException {
         builder.setCharacterType(CharacterType.ROGUE);
-        builder.setCompanion(Companion.EAGLE);
-        builder.setWeapon(Weapon.FISTS);
-        builder.setEquipment(Equipment.WHITE_ROBE);
+        builder.buildCompanion();
+        builder.buildWeapon();
+        builder.buildEquipment();
     }
-    public void constructWizard(Builder builder) {
+    public void constructWizard(Builder builder) throws IOException {
         builder.setCharacterType(CharacterType.WIZARD);
-        builder.setCompanion(Companion.DOG);
-        builder.setWeapon(Weapon.STAFF);
-        builder.setEquipment(Equipment.SKIN_ARMOR);
+        builder.buildCompanion();
+        builder.buildWeapon();
+        builder.buildEquipment();
     }
-    public void constructWarrior(Builder builder) {
+    public void constructWarrior(Builder builder) throws IOException {
         builder.setCharacterType(CharacterType.WARRIOR);
-        builder.setCompanion(Companion.SNAKE);
-        builder.setWeapon(Weapon.SWORD);
-        builder.setEquipment(Equipment.MITHRIL);
+        builder.buildCompanion();
+        builder.buildWeapon();
+        builder.buildEquipment();
     }
     public void characterEditor() {
         Scanner sc = new Scanner(System.in);
