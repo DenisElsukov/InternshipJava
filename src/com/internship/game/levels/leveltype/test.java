@@ -6,7 +6,7 @@ import com.internship.game.levels.DraculaClub;
 public class test {
     public static void main(String[] args) {
         DraculaClub draculaCastle = new DraculaClub();
-        System.out.println(draculaCastle.toString());
+        System.out.println(draculaCastle);
     }
 
 }

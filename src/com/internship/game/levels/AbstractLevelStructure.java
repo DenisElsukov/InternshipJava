@@ -1,11 +1,7 @@
 package com.internship.game.levels;
 
 import com.internship.game.characters.NPC.NPC;
-import com.internship.game.characters.monsters.monster;
 import com.internship.game.levels.leveltype.LevelType;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public abstract class AbstractLevelStructure {
     private String levelName;
@@ -52,6 +48,6 @@ public abstract class AbstractLevelStructure {
                 "Location = " + getLevelName() + "\n" +
                 "size = " + size + "\n" +
                 "NPC = " + npc + "\n" +
-                "Awaiting monsters=" + levelType.getSetMonster();
+                "Awaiting monsters = " + levelType.getSetMonster();
     }
 }
