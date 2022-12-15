@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class Demo {
     public static void main(String[] args) throws IOException {
+        EnviromentBuilder enviromentBuilder = new EnviromentBuilder();
         Scanner sc = new Scanner(System.in);
         Director director = new Director();
         CharactersManualBuilder builder = new CharactersManualBuilder();
